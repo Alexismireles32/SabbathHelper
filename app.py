@@ -7,7 +7,7 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import Chroma
 from langchain.agents.agent_toolkits import create_vectorstore_agent, VectorStoreToolkit, VectorStoreInfo
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = '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'
 
 llm = OpenAI(temperature=0.5)
 embeddings = OpenAIEmbeddings()

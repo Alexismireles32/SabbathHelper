@@ -17,10 +17,9 @@ from langchain.agents.agent_toolkits import (
     VectorStoreToolkit,
     VectorStoreInfo
 )
-
-# Set APIkey for OpenAI Service
-# Can sub this out for other LLM providers
-os.environ['OPENAI_API_KEY'] = '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'
+headers = {
+    "authorization": st.secrets["OPENAI_API_KEY"],
+    "content_type": "application_json"
 
 # Create instance of OpenAI LLM
 llm = OpenAI(temperature=0.1, verbose=True)

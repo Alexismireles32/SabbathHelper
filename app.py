@@ -1,3 +1,5 @@
+import os
+os.environ['PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION'] = 'python'
 # Import os to set API key
 import os
 # Import OpenAI as main LLM service

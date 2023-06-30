@@ -4,4 +4,3 @@ pypdf==3.11.0
 streamlit==0.88.0
 pandas==1.5.3
 langflow==0.2.2
-openai==0.27.8

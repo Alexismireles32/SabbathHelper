@@ -3,3 +3,4 @@ openai<0.28.0
 pypdf==3.11.0
 streamlit==0.88.0
 pandas<1.5.3
+protobuf==3.20.0

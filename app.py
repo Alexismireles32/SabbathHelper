@@ -22,7 +22,7 @@ from langchain.agents.agent_toolkits import (
 headers = {
     "authorization": st.secrets["OPENAI_API_KEY"],
     "content_type": "application_json"
-
+}
 # Create instance of OpenAI LLM
 llm = OpenAI(temperature=0.1, verbose=True)
 embeddings = OpenAIEmbeddings()

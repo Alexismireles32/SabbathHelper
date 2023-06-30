@@ -3,7 +3,7 @@ os.environ['PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION'] = 'python'
 # Import os to set API key
 import os
 # Import OpenAI as main LLM service
-from langchain.llms import OpenAI
+from langchain import OpenAI
 from langchain.embeddings import OpenAIEmbeddings
 # Bring in streamlit for UI/app interface
 import streamlit as st
@@ -21,7 +21,7 @@ from langchain.agents.agent_toolkits import (
 )
 headers = {
     "authorization": st.secrets["OPENAI_API_KEY"],
-    "content_type": "application_json"
+    "content-type": "application/json"
 }
 # Create instance of OpenAI LLM
 llm = OpenAI(temperature=0.1, verbose=True)
